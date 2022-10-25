@@ -1,18 +1,50 @@
 body{
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
 .logo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
-h1{
-    font: size 700px;;
-    margin:0;
+.logo h1{
+    padding-left: 10px;
+    font-size: 50px;
 }
-.menu{
-    display: flex;
-    justify-content: space-evenly;
+nav li{
+    list-style-type: none;
+}
+caption{
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
 
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+
+form{
+    border:1px solid black;
+    padding: 20px;
+}
+footer p{
+    font-style: italic;
 }
