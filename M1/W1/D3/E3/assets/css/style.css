@@ -109,7 +109,13 @@ footer{
     align-items: baseline;
     margin: 0 50px 0;
 }
-
 p{
     font-weight: lighter;
+}
+ol :first-child{
+    font-weight: bolder;
+
+}
+ol li+li{
+    list-style-type: none;
 }
