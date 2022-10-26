@@ -1,0 +1,115 @@
+
+body{
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+a:link{
+    color: rgb(8, 179, 179);}
+
+
+#logo{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+#logo img{
+    width: 20%;
+    align-items: center;
+    box-shadow:0 2px 3px #08b3b382;
+}
+#banner{
+    display:flex;
+    width: 100%;
+    background:linear-gradient( rgb(243, 211, 4) ,rgb(215, 215, 2));
+    border-top: 2px solid rgb(255, 204, 0);
+    margin-top: 20px; 
+    padding-left: 30px;  
+    justify-content: center;
+    font-weight: 300;
+    flex-wrap: nowrap;
+    color: #b50db5;
+}
+#banner strong{
+    text-transform: uppercase;
+}
+
+#title{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    line-height: 50px;
+    font-weight: bolder;
+    margin:0 50px 0 ;
+}
+#title p{
+    line-height: 1.5em;
+    padding-bottom: 0;
+    text-align: justify;
+    
+}
+video{
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 1px 2px 2px 0px grey;
+    margin-bottom: 20px;
+    
+}
+#video{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 0;
+    color: dimgray;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+}
+
+#video  caption{
+padding: 100px;
+padding-top: 20px;
+}
+
+#feature{
+    border-left: 2px  solid orange;
+    padding-left: 20px;
+    margin-left: 70px;
+}
+#feature p{
+    text-transform: uppercase;
+    color:sienna
+}
+#feature a{
+    text-transform: capitalize;
+}
+h2{
+    font-weight: lighter;
+}
+h3{
+    font-weight: bolder;
+}
+
+hr { 
+    background-color: rgb(8, 179, 179); 
+    height: 1px; 
+    border: 0; 
+    width: 100%;
+}
+aside{
+margin: 0 50px 0;
+line-height: 2em;
+}
+aside li{
+    font-weight: lighter;
+}
+footer{
+    display: flex;
+    align-items: baseline;
+    margin: 0 50px 0;
+}
+
+p{
+    font-weight: lighter;
+}
