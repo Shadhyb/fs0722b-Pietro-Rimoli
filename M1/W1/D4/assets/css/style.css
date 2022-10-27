@@ -1,0 +1,112 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/sfondo.png");
+    background-position: center;
+    align-items: center;
+}
+body{
+    box-sizing: border-box;
+    margin: 20px;
+   align-items: center;
+   justify-items: center;
+   max-width: 500px;
+   min-width: 200px; /*soluzione che  non amo, chiedere se c'è meglio*/
+}
+
+h1{
+    font-weight: bold;
+    font-size: x-large;
+}
+h2{
+    font-weight: bold;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+ul li{
+    list-style-type: none;
+}
+
+hr{
+    visibility: hidden;
+}
+
+
+table, tr, th, td{
+    border-collapse: collapse;
+
+}
+/* HEADER */
+.header{
+box-sizing: border-box;
+width: 100%;
+background: linear-gradient( #029CC2, #046E86);
+box-shadow: 0 1px 2px 1px gray;
+align-items: center;
+text-align: center;
+color: white;
+line-height: 1.5;
+text-transform: uppercase;
+font-weight:bold;
+padding: 20px;
+}
+#logo{
+    padding-bottom: 20px;
+}
+#epicode{
+    padding-bottom: 20px;}
+#menu a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+.container{
+    box-sizing: border-box;
+    background-color: white;
+    width:100% ;
+    margin: auto;
+    line-height: normal;
+    text-align: justify;
+    padding: 20px
+}
+
+#author{
+    opacity:0.5;
+    padding: 20px 0 20px;
+}
+code{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: aquamarine;
+}
+.container ul ,ol{
+    padding: 20px ;
+}
+.container ul li{
+    list-style-type: circle;
+}
+strong{
+    color: blue;}
+
+strong:hover{
+    color: darkmagenta;
+}
+
+#formattazione{
+    font-weight: 400;
+    font-size: medium;
+    text-transform:none;
+    
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ASIDE */
+
+/* FOOTER */
