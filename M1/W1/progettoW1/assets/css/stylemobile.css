@@ -171,7 +171,7 @@ hr {
   width: 100%;
 }
 
-footer {
+#contatti {
   color: #c8e7f0;
   font-size: medium;
   font-weight: 100;
@@ -180,10 +180,10 @@ footer {
   justify-content: center;
   padding: 10%;
 }
-footer i:hover{
+#contatti i:hover{
     transform: scale(200%);
 }
-footer h4 {
+#contatti h4 {
   color: white;
   font-size: xx-large;
   padding-bottom: 5%;
@@ -191,12 +191,12 @@ footer h4 {
 hr:hover{
     transform: scale(200%);
 }
-footer a {
+#contatti a {
   color: #c8e7f0;
 }
 #via {
   text-decoration: none;
 }
-footer p {
+#contatti p {
   padding: 0%;
 }
