@@ -118,6 +118,9 @@ hr {
 .mainarticles {
   margin: 10% 0;
 }
+.mainarticles h3{
+    font-size: larger;
+}
 
 #circle {
   border-radius: 50%;
