@@ -1,1 +1,7 @@
-if (confirm("Vuoi continuare?")) { document.write("hai scelto di proseguire") } else { document.write("la procedura è annullata") };
+function myFunction(){
+alert ('Vuoi proseguire?');
+confirm('Sei sicuro?');}
+
+console.log (techno)
+
+
