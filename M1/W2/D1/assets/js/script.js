@@ -1,0 +1,1 @@
+if (confirm("Vuoi continuare?")) { document.write("hai scelto di proseguire") } else { document.write("la procedura è annullata") };

@@ -1,0 +1,35 @@
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+}
+#back{
+    color: aqua;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: xx-large;
+}
+#ritorno{
+    padding-left:200px;
+}
+#containerIndex{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: greenyellow;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    padding: 14%;
+}
+#containerHome{
+   box-sizing: border-box;
+    width: 100%;
+   align-items: center;
+    width: 1440px;
+    height: 1432px;
+    border: 20px solid blueviolet;
+    padding: 20%;
+}
+iframe{
+    border: 5px double blueviolet;
+}
