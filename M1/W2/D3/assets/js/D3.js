@@ -185,7 +185,6 @@ const me = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-me.city ='Toronto'
 console.log(me)
 
 
@@ -193,14 +192,9 @@ console.log(me)
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-const me2 = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-  city: 'Toronto'
-}
-delete lastName
-console.log(me2)
+
+delete  me.lastName
+console.log(me)
 
 
 /* ESERCIZIO 13

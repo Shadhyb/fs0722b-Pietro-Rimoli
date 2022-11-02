@@ -76,11 +76,18 @@ alert(numero)
 */
 var nome1 = ('john')
 var nome2 = ('John')
-var john = (nome1 != nome2)
+var john = (nome1 === nome2)
 console.log (john)
+if (nome1.toLowerCase === nome2.toLowerCase){
+  console.log('true')
+}
+else{
+  console.log('false')
+}
 function esercizio7(){
   alert (john)
 }
+
 
 
 
