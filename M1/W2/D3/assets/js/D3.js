@@ -138,6 +138,8 @@ function esercizio7(){
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
+/*DEVO RIPETERE ARRAY E ALCUNI OPERATORI*/
+
 let parola=('john')
 typeof('john')
 console.log(parola)
@@ -182,8 +184,8 @@ const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
-  city: 'Toronto'
 }
+me.city ='Toronto'
 console.log(me)
 
 
