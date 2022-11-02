@@ -185,6 +185,9 @@ const me = {
   city: 'Toronto'
 }
 console.log(me)
+function esercizio10(){
+  alert(me)
+}
 
 
 /* ESERCIZIO 12
