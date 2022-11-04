@@ -5,6 +5,8 @@ body{
     margin: 0 auto;
     align-items: center;
     padding-left: 20px;
+    background-image: url(../img/board-g07e321a89_1920.jpeg);
+
 
 }
 .content {
@@ -67,6 +69,7 @@ body{
 #foglio{
     box-sizing: border-box;
     border: 1px solid #959da4;
+    background-color: antiquewhite;
     margin-left: 100px;
     width: 500px;
     padding: 10px;

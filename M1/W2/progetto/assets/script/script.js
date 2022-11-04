@@ -1,6 +1,7 @@
 function n(dato){ 
     document.getElementById("ops").value += dato;
  }
+
  
  
  function ops() { 
@@ -16,11 +17,9 @@ function phi(){
 function percentage(){
     document.getElementById('ops').value /=100 
 }
-let error = ['+,+,-,-,*,*,/,/']
-if (error=true){
-    document.getElementById('ops').value = ('errore')
-}
+
+
 
  
 
- //nuovo array per scrivere i numeri nel div?
+ 
