@@ -1,0 +1,88 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.content {
+    margin-left: 2px;
+    
+}
+#calcolatrice{
+    background-color: rgb(239, 14, 142);
+   display: inline-block;
+   font-family: 'Big Shoulders Stencil Display'; 
+   width: 220px;
+   border: 2pz solid black;
+   border-radius: 10px;
+   box-shadow:0 5px 8px 0 rgb(215, 9, 126);
+}
+#logo{
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+#logo img{
+    width: 20%;
+
+}
+.tasto {
+    background-color: #959da4 ;
+    color: #f2f4f6;
+    font-size: 15pt;
+    text-align: right;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 4px 0 rgb(59, 56, 57);
+    margin: 4px 2px;
+    height: 40px;
+    width: 46px;
+    font-family: 'Big Shoulders Stencil Display'; 
+}
+.tasto:hover{
+    color:chartreuse
+}
+.display {
+    background: rgb(37, 62, 37);
+    color: greenyellow;
+    font-size: 24pt;
+    border: #175c97 solid 2px;
+    margin: 4px 2px;
+    width: 204px;
+    height: 40px;    
+    font-family: 'Big Shoulders Stencil Display'; 
+    text-align: end;      
+   
+}
+.uguale {
+    width: 208px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#foglio{
+    box-sizing: border-box;
+    border: 1px solid #959da4;
+    margin-left: 100px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    transform: rotate(-10deg);
+}
+#foglio div{
+    padding: 10px;
+    border-bottom: 1px solid #959da4;
+    font-family: 'Gochi Hand';
+    font-size: xx-large;
+    color: red;
+}
+.esercizio{
+    font-family: 'Gochi Hand';
+    font-size: small;
+    color: black;
+    padding: 0;
+}

@@ -153,14 +153,7 @@ console.log(eyeColor)
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
-Array.prototype.swap (eye_color) {
-  case starWarsCharacters.eyeColor:
-    
-    break;
 
-  default:
-    break;
-}
  
   
 
@@ -168,6 +161,13 @@ Array.prototype.swap (eye_color) {
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
   */
+var mass=0;
+function mass(){
+  let i= 0
+  while(let  <= starWarsCharacters.length){
+    mass += parseInt(starWarsCharacters[i].mass)
+  }
+}
 
 
 /* ESERCIZIO 7
@@ -183,6 +183,7 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
