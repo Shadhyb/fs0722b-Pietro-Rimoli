@@ -3,13 +3,11 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-function nome (f,g){
-  let str1 = f.slice(0,2) + g.slice(-3);
-  let str2 = str1.toUpperCase()
-  return str2
-}
-console.log(nome('Pietro','Rimoli'))
-
+function concatenata (v1, v2){
+  let conc1 = v1.slice(0,2) + v2.slice(-3)
+  let conc2 = conc1.toUpperCase()
+return conc2}
+console.log(concatenata('stringa1','strinca2'))
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
@@ -21,18 +19,19 @@ for (let i=0;i<100;i++){
     arr.push(i);
   }
 }
-
 console.log(arr)
+
 
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
+
+
   let arr2 =[]
-  for(let j=1;j<=100;j++){
-    if(j%5 ===0){
-      arr2.push(j);
-    }
-  }
+  for(let i=0;i<=100;i++){
+  if(i%5 ===0){
+    arr2.push(i)
+  }}
 
 console.log(arr2)
   
@@ -40,13 +39,14 @@ console.log(arr2)
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
-  const createRandomArray = function()
-  {
-    let arr3 = [];
-    for(let i=0; i<10; i++)
-      arr3.push(Math.round(Math.random()*100))}
-
-      console.log(createRandomArray())
+const randomNumber = function(){
+  let arr3 =[]
+  for(let i=0;i<10;i++)
+    arr3.push(Math.round(Math.random())*100)
+    return arr3
+    
+}
+  console.log(randomNumber())
   
 
 /* ESERCIZIO 5
@@ -55,7 +55,7 @@ console.log(arr2)
   const findEvenNumbers = function (arr) {
     let evenArray = []
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i] % 2 === 0) {
+      if (arr[i] % 2 == 0) {
         evenArray.push(arr[i])
       }
     }
@@ -66,11 +66,21 @@ console.log(arr2)
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
+let arr6 =[];
+for(let j=0;j<10;j++){
+  if(j+0){console.log(arr[j])}}
+  
+
+  
 
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
+
+
+
+  
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
@@ -83,9 +93,7 @@ function strToNumArray(array) {
   for (let u of array) {
     s.push(u.length);
   }
-  return s;
-}
-console.log(strToNumArray(animali))
+  return s;}
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
@@ -95,28 +103,29 @@ console.log(strToNumArray(animali))
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
-const createRandomArrayWithoutDuplicate = function()
-{
+/*function createRandomArrayWithoutDuplicate() {
   let arr1 = [];
-  for(let i=0; i<10; i++){
+  for (let i = 0; i < 10; i++) {
     let added = false;
-    while(!added){
-      let numberToAdd = Math.ceil(Math.random()*10);
-      if(!arr1.includes(numberToAdd)){
-        arr1.push(numberToAdd)
-        added =true
+    while (!added) {
+      let numberToAdd = Math.ceil(Math.random() * 10);
+      if (!arr1.includes(numberToAdd)) {
+        arr1.push(numberToAdd);
+        added = true;
       }
     }
   };
   return arr1;
 }
-console.log(createRandomArrayWithoutDuplicate())
+console.log(createRandomArrayWithoutDuplicate());*/
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
-
+let arr11 = ['a','x','a','c'];
+let rra11 =arr11.reverse('')
+console.log(rra11)
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -238,10 +247,21 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+  let anno = movies.filter(function(old)  
+  {
+if (old.Year >'1970' ){
+  return old
+}
+console.log(old)
+})
+
+
+
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
-
+let numeroFilm = movies.includes.argument(0)
+console.log(numeroFilm)
 /* ESERCIZIO 14
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
