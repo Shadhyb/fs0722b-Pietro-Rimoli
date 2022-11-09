@@ -1,0 +1,46 @@
+body{
+    font-family: 'Indie Flower';
+    margin: 0 auto;
+   box-sizing: border-box;
+   align-items: center;
+  
+}
+#addTask{
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background:linear-gradient( 20deg, rgb(1, 168, 239), white);
+    color: #fff;
+    padding: 20px;
+    
+}
+#barra{
+    margin-bottom: 20px;
+    
+}
+#testoTask{
+    background-color: rgb(204, 203, 173);
+    border-radius: 20px;
+    color: #fff;
+    
+}
+#add{
+    border-radius: 20px;
+    background-color: rgb(168, 255, 105);
+}
+#tasks{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid green;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+  
