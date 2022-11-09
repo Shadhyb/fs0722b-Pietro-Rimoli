@@ -1,28 +1,32 @@
 
-
-
-
-
 document.querySelector('#add')
-.addEventListener('click', function()
-{
-    let task = document.querySelector('#testoTask');
+.addEventListener('click', function(){
 
+    let testo = document.querySelector('#testoTask');
+  
     let div = document.createElement('div');
-    div.textContent = task.value;
-
-    div.classList.add('task');
+    div.classList.add('todo')
+    
+    
+    let span = document.createElement('span');
+    span.textContent = testo.value;
 
     let completa = document.createElement('button');
-            completa.textContent = 'Completato';
-
-    completa.addEventListener('click', ()=>{
-        div.classList.add('done');
-        document.querySelector('#done').append(div);
+    completa.textContent = '';
+    completa.classList.add('completa')
+   
+    
+   
+    completa.addEventListener('click', ()=> {
+        div.classList.add('completato');
+        document.querySelector('#done')
+        .append(div);
     })
 
-    div.append(task);
-
-    document.querySelector('#toDO').append(div);
-    task.value = ''
+    div.append(span, completa);
+    document.querySelector('#toDo').append(div);
+   
+    testo.value = '';
+          
 });
+

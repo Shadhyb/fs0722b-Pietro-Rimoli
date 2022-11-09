@@ -41,6 +41,22 @@ body{
     font-weight: bold;
     font-size: x-large;
 }
+.todo{
+   display: flex;
+   flex-direction: column;
+   padding: 50px;
+   font-size: xx-large;
+    background: linear-gradient(#dede5d, gray);
+    color: black;
+    transform: rotate(-3deg);
+}
+.completa{
+    width: 10px;
+    height: 15px;
+    border: 2px solid rgb(245, 245, 245);
+    background-color: transparent;
+}
+
 
 
   
