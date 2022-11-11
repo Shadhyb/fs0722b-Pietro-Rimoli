@@ -72,7 +72,7 @@ console.log(skills)
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 let dice =function(){
-  return Math.floor(Math.random() * 6);
+  return Math.floor(Math.random() * 6); //applico il metodo Math floor per il numero intero e Math random per quello random
 }
 console.log(dice())
 
@@ -92,7 +92,7 @@ console.log(whoIsBigger())
 */
 
 let toSplit = "Meloni il presidente";
-let splitMe = toSplit.split("\ ");
+let splitMe = toSplit.split("\ ");  //aggiungendo il separatore ottengo un array con le tre stringhe
 console.log(splitMe)
 
 
@@ -117,12 +117,24 @@ console.log(deleteOne())
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 
 */
-
+let onlyLetters =function(){
+  let str1 = 'I have 4 dogs'      //assegno una stringa come nell'esempio, utilizzo il metodo replace per sostiuire a 4 che una stringa il vuoto e con trim rimuovo lo spazio bianco
+  let str2 = str1.replace('4', '')  
+  return str2.trim()
+}
+onlyLetters()
+console.log(onlyLetters())
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-
+const validateEmail =function (email) {
+  if(email.match(
+    /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim))
+    { return true}}
+    
+  
+   //utilizzo un costruttore di email, uso il match per assegnare i caratteri regex che validano la mail come tale, oltre alla @ anche numeri e lettere, il regex l'ho preso online
 
 
 
@@ -130,7 +142,7 @@ console.log(deleteOne())
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
 let whatDayIsIt = new Date(); 
-console.log(whatDayIsIt);
+console.log(whatDayIsIt); 
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -243,6 +255,8 @@ redLink.style.backgroundColor ='rgb (255,0, 0)'
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+const test = document.querySelectorAll('tr').addClassList('test')
+console.log('test')
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
@@ -405,17 +419,17 @@ console.log(newestMovie())
 
 //esercizio 13
 let nMovies = function () {
-let result = {Title:0}
-for (let i = 0; i < movies.length; i++) {
-  let numeroFilm = movies.Title[i]
-    result =  movies[i]
+let indice = movies.length
+return movies.Title;
+
+
 
 }
 nMovies()
 console.log(nMovies()) //non funziona ma non so come fare altrimenti
 // ESERCIZIO 17
 
-
+/*
 
 function searchByTitle(filmName){
   let films =[];
@@ -426,4 +440,4 @@ function searchByTitle(filmName){
   filtroNomi = films.filter(s =>s.includes(filmName));
   console.log('.'+filtroNomi)
 }
-searchByTitle('Lord')}
+searchByTitle('Lord')}*/
