@@ -12,7 +12,7 @@ REGOLE
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
-let sum = (10+20)
+let sum = (10+20) //creo una variabile alla quale assegno la somma
 console.log(sum)
 
 
@@ -20,14 +20,16 @@ console.log(sum)
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
-let random = function(){
+let random = function(){ 
   return Math.floor(Math.random() * 20);
 }
 random()
 console.log(random())
+
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
-*/let me= [
+*/
+let me= [
   {
     name: 'Pietro',
     surname:'Rimoli',
@@ -38,59 +40,96 @@ console.log(me)
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
-let removeAge = function(){
-  return me.remove(function(item){
-    return item.age < 33;
-  });
-}
-console.log(removeAge())
+/*let ageDel =[ me.pop()]
+console.log(me)
+
 
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
+let skills = [{
+  skill: 'Javascript',
+  level:1
+}]
+
+
 
 /* ESERCIZIO F
-  Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
+Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
+
 
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+let skillDel =[ skills.pop()]
+console.log(skills)
 
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+let dice =function(){
+  return Math.floor(Math.random() * 6);
+}
+console.log(dice())
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
-
+let whoIsBigger =function(){
+let a=3
+let b=7
+  return Math.max(a,b)
+}
+console.log(whoIsBigger())
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+let toSplit = "Meloni il presidente";
+let splitMe = toSplit.split("\ ");
+console.log(splitMe)
+
+
+
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
+let deleteOne = function(){
+  let testo = 'Salvini salvino vicinino';
+  let boolean = false;
+    if (boolean=true){
+      return testo
+  }
+}
+console.log(deleteOne())
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
+
 */
+
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+
+
+
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+let whatDayIsIt = new Date(); 
+console.log(whatDayIsIt);
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -109,10 +148,17 @@ console.log(removeAge())
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+let isTodayMyBirthday = function(){
+let compleanno = ("1989-03-03");
+if (compleanno === whatDayIsIt) {
+  return false;} }
+isTodayMyBirthday()
+  
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
@@ -122,8 +168,10 @@ console.log(removeAge())
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
+  //sotto l'array
 */
 
 /* ESERCIZIO 13
@@ -146,6 +194,9 @@ console.log(removeAge())
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
+
+
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
@@ -160,14 +211,16 @@ console.log(removeAge())
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-
+document.getElementById('#container')
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+document.querySelectorAll('td')
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
@@ -332,3 +385,30 @@ const movies = [
       'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
   },
 ]
+//esercizio 12
+let newestMovie = function () {
+  let result = { Year: 0 }
+  for (let i = 0; i < movies.length; i++) {
+    let currentYear = parseInt(movies[i].Year)
+    if (currentYear > result.Year) {
+      result = movies[i]
+    }
+  }
+  return result
+}
+console.log(newestMovie())
+
+//Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
+const countMovies = function(){
+
+}
+
+/* ESERCIZIO 17
+  Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
+*/
+let searchByTitle = function(){
+  let title = movies.filter(Title)
+  
+}
+searchByTitle()
+console.log(searchByTitle())
