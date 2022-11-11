@@ -40,24 +40,25 @@ console.log(me)
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
-/*let ageDel =[ me.pop()]
+/*let ageDel =[ me.pop()] 
 console.log(me)
 
 
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
-let skills = [{
+let skills = [{ //creo una variabile come Array,inserendo le parentesi [] e assegno il valore skill e livello
   skill: 'Javascript',
   level:1
 }]
 
-
+console.log(skills)
 
 /* ESERCIZIO F
 Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
-
+skills.push('school')
+console.log(skills)
 
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
@@ -171,7 +172,7 @@ isTodayMyBirthday()
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
-  //sotto l'array
+  // l'ho fatto sotto l'array
 */
 
 /* ESERCIZIO 13
@@ -211,11 +212,11 @@ isTodayMyBirthday()
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-document.getElementById('#container')
+document.getElementById('#container') //utilizzo il metodo getElementById richiamo nel documento gli elementi con l'id container
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-document.querySelectorAll('td')
+document.querySelectorAll('td') //seleziono gli elementi del DOM con tag td, utilizzo All per selezionarli tutti
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
@@ -226,9 +227,13 @@ document.querySelectorAll('td')
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+let redLink = document.createElement('a');
+document.querySelectorAll('a');
+redLink.style.backgroundColor ='rgb (255,0, 0)'
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
@@ -398,17 +403,27 @@ let newestMovie = function () {
 }
 console.log(newestMovie())
 
-//Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
-const countMovies = function(){
+//esercizio 13
+let nMovies = function () {
+let result = {Title:0}
+for (let i = 0; i < movies.length; i++) {
+  let numeroFilm = movies.Title[i]
+    result =  movies[i]
 
 }
+nMovies()
+console.log(nMovies()) //non funziona ma non so come fare altrimenti
+// ESERCIZIO 17
 
-/* ESERCIZIO 17
-  Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
-*/
-let searchByTitle = function(){
-  let title = movies.filter(Title)
-  
+
+
+function searchByTitle(filmName){
+  let films =[];
+  let filtroNomi;
+  for(let i=0; i<movies.length;i++){
+    filtroNomi.push(movies[i].Title);
+  }
+  filtroNomi = films.filter(s =>s.includes(filmName));
+  console.log('.'+filtroNomi)
 }
-searchByTitle()
-console.log(searchByTitle())
+searchByTitle('Lord')}
