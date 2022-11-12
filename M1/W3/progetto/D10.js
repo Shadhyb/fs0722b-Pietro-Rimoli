@@ -128,14 +128,16 @@ console.log(onlyLetters())
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-const validateEmail =function (email) {
-  if(email.match(
-    /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim))
-    { return true}}
-    
-  
-   //utilizzo un costruttore di email, uso il match per assegnare i caratteri regex che validano la mail come tale, oltre alla @ anche numeri e lettere, il regex l'ho preso online
+let emailField = document.createElement('input')
+document.querySelector('input').addEventListener('keyoff',function(){
+  t
+  if(emailField.inputMode.match('^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$'))
+{
+  return true
+}
 
+emailField ()
+   //creo lelemento input e all'evento keyoff cioè a fine digitalizzazione, matcha il regex e ritorna true se è corrispondente
 
 
 /* ESERCIZIO 7
@@ -159,7 +161,13 @@ console.log(whatDayIsIt);
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
-*/
+*/let howManyDays = function(){
+  let date1 = ('22 October 2009');
+  let date2 = new Date();
+  let giorni = date1<date2;
+  giorni.getDate()
+  console.log(giorni)
+}
 
 
 /* ESERCIZIO 10
@@ -246,7 +254,14 @@ redLink.style.backgroundColor ='rgb (255,0, 0)'
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
-
+const addToTheList = function (content) {
+  let lista =document.createElement('ul')
+ lista.classList.add(myList)
+  let test = document.createElement('li')
+  test.innerHTML = content;
+  lista.appendChild(test);
+}
+addToTheList('nuova stringa')
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
