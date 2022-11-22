@@ -488,6 +488,7 @@ left:20px;
 width:30%;
 text-transform:uppercase;
 color:black;
+border-radius: 5px;
 }
 
 /* icona in posizione absolute*/
