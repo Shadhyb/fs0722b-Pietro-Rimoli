@@ -1,0 +1,19 @@
+li{
+    list-style-type: none;
+    background-color: #FBF7E3;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    color:#612405;
+    padding: 10px 20px;
+    margin:0;
+ 
+}
+ul{
+    display: flex;
+    border-radius: 50px;
+    background-color: #F3DF85;
+    padding: 20px 25px;
+    justify-content: space-around;
+}

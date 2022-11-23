@@ -478,6 +478,7 @@ width:80%}
 section {
   position:relative;
   height:267px;
+  padding-top:5%
   
 }
 section h2{
@@ -489,6 +490,7 @@ width:30%;
 text-transform:uppercase;
 color:black;
 border-radius: 5px;
+margin-bottom:5%
 }
 
 /* icona in posizione absolute*/

@@ -1,0 +1,14 @@
+.paragrafo{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    background-color: #FBF7E3;
+    text-align: justify;
+    color:#612405;
+    border-radius: 20px;
+    padding: 30px ;
+   
+}
+.paragrafo img{
+    width: 100%;
+}
