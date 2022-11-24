@@ -46,7 +46,7 @@ body {
     animation-name: titolo;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    animation-delay: 0s;
+    animation-delay: 1s;
     align-items: flex-end;
     
   }
