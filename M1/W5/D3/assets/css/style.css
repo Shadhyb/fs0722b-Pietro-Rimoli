@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 body{
     color: #612405;
     display: flex;
@@ -16,12 +17,11 @@ h3{
     text-align: justify;
     color:#612405;
     border-radius: 40px;
-    padding: 30px ;
-
-   
+    padding: 30px ; 
 }
 .paragrafo img{
     width: 100%;
+    object-fit: cover;
 }
 .cards{
     background-color: #FBF7E3;
@@ -40,8 +40,6 @@ h3{
     color:#612405;
     border-radius: 120px;
     flex: 0 0 200px; 
-    
-  
 }
 .card img{
     width:100%;
@@ -50,15 +48,13 @@ h3{
     border-radius:120px 120px 0 0;;
 }
 .card .text {
-   align-items: center;
-   justify-content: space-around;
+   justify-content: center;
 
 }
 .text .p{
     display: flex;
     justify-content: center;
-    font-size: x-large;
-    
+    font-size: x-large;  
 }
 .p span{
     font-weight: lighter;
@@ -72,27 +68,34 @@ h3{
     font-size: large;
     margin-bottom: 20px;
     }
-    li{
-        list-style-type: none;
-        background-color: #FBF7E3;
-        border-radius: 30px;
-        text-align: center;
-        align-items: center;
-        font-size: small;
-        color:#612405;
-        padding: 10px 20px;
-        margin:0;
-     
+ li{
+    list-style-type: none;
+    background-color: #FBF7E3;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    color:#612405;
+    padding: 10px 20px;
+    margin:0;
     }
-    ul{
-        display: flex;
-        border-radius: 50px;
-        background-color: #F3DF85;
-        padding: 20px 25px;
-        justify-content: space-around;
+ul{
+    display: flex;
+    border-radius: 50px;
+    background-color: #F3DF85;
+    padding: 20px 25px;
+    justify-content: space-around;
     }
-    #mainContainer{
-        display: flex;
-        flex-wrap: wrap;
+
+ #mainContainer{
+    display: flex;
+    flex-wrap: wrap;
     }
    
+    /*
+    
+    nel nav usa border box
+    flex 1 0 100px per gli item small
+    flex 2 0 200px per il big e display flex perchè parent
+    la nav la mette nell'aside in html layout
+    div classe wrapper con aside e main interni e poi con la mediaquery la modifico con flex basis e display none con nth-last-child 

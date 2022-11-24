@@ -1,0 +1,99 @@
+body {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", sans-serif;
+}
+
+#container {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  background: #666;
+  color: #fff;
+  padding: 40px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: xx-large;
+  line-height: 0.5em;
+  margin-top: 2em;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+ul li {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 12em;
+  width: 12em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  line-height: 4em;
+}
+ul li {
+  margin: 0.8em;
+}
+.gialli {
+  background: linear-gradient(#dede5d, gray);
+  color: black;
+  transform: rotate(-3deg);
+  animation-name: delay;
+  animation-delay: 0s; 
+  animation-duration:2s ;
+}
+.verdi {
+  background: linear-gradient(#88ee8f, rgb(178, 177, 177));
+  color: black;
+  transform: rotate(5deg);
+  animation-name: delay;
+  animation-delay: 0s; 
+  animation-duration:3s ;
+}
+.viola {
+  background: linear-gradient(#b0b1ef, gray);
+  color: black;
+  transform: rotate(-6deg);
+  animation-name: delay;
+  animation-delay: 0s;
+  animation-duration:4s ;
+
+}
+.gialli:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.verdi:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.viola:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes delay{
+0%{
+  transform: scale(5%);
+  
+}
+100%{ transform: scale(100%);}}
