@@ -44,7 +44,7 @@ body {
     left: 385px;
     color: transparent;
     animation-name: titolo;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
     align-items: flex-end;
