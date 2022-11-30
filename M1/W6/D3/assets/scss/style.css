@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: large;
+  text-transform: uppercase;
+}
+body a {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu li {
+  list-style-type: none;
+  padding: 2em;
+}
+nav .menu li:hover {
+  color: blue;
+}
+
+.container-flex {
+  display: flex;
+  background-image: url("../img/SL_060521_43530_09.jpg");
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.text {
+  padding-left: 200px;
+  font-size: xx-large;
+}
+.text h3 {
+  text-transform: lowercase;
+}
+
+.img {
+  margin: 0;
+  padding: 2em;
+}
+
+img {
+  padding-left: 400px;
+  width: 50%;
+}
+
+.container-bottoni {
+  display: flex;
+}
+.container-bottoni #buttongreen {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 10px 20px;
+  margin: 5px;
+  box-shadow: 0 1px 2px black;
+}
+.container-bottoni #buttongreen:hover {
+  transform: scale(120%);
+}
+.container-bottoni #buttonred {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 15%;
+  padding: 10px 20px;
+  box-shadow: 0 1px 2px orange;
+}
+.container-bottoni #buttonred:hover {
+  transform: scale(120%);
+  box-shadow: 0 4px 4px black;
+}/*# sourceMappingURL=style.css.map */

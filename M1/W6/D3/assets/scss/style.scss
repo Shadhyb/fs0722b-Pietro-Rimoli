@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'buttons';
+body{
+    width:$main-width;
+    margin:$main-margin;
+    box-sizing: border-box; 
+    font-size: $main-font-size;
+    text-transform: $font-text-transform;
+    a{
+        text-decoration: $a-text-decoration;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+nav{
+    background-color: $menu-background-color;;
+    display:$main-display;
+    justify-content: space-between;
+    align-items: center;
+  
+    .menu{
+        display:$main-display;
+        li{
+            list-style-type: $point-list-style-type;
+            padding: $main-padding;
+            &:hover{
+                color:blue
+            }
+        }
+    }
+}
+.container-flex{
+    display: $main-display;
+    background-image:url('../img/SL_060521_43530_09.jpg');
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: $main-padding;
+       
+    }
+    .text{
+        padding-left: 200px;
+        font-size:$big-font-size;
+        h3{
+            text-transform: lowercase;
+        }
+    }
+    .img{
+        margin:0;
+        padding: $main-padding;
+    }
+    img{
+        padding-left: 400px;
+        width:$img-width
+    }
+
+.container-bottoni{
+    display: $main-display;
+#buttongreen{
+    background-color: $green-background-color;
+    color:$text-color;
+    border:$bordi-border;
+    border-radius: 10%;
+    padding:$bottone-padding;
+    margin:5px;
+    box-shadow:0 1px 2px black;
+    &:hover{
+        transform: scale(120%);
+    }
+}
+#buttonred{
+    background-color: $red-background-color;
+    color:$text-color;
+    border:$bordi-border;
+    border-radius: 15%;
+    padding:$bottone-padding;
+    box-shadow:0 1px 2px orange;
+
+    &:hover{
+        transform: scale(120%);
+        box-shadow:0 4px 4px black;
+    }
+}
+}
