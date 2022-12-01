@@ -94,6 +94,11 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (max-width: 680px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar li {
   font-size: 20px;
 }

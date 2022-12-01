@@ -68,6 +68,9 @@ header{
 .sidebar{
     text-transform: uppercase;
     text-align: center;
+    @include devices(tablet) {
+     display: none;   
+    }
    
     
     li{
