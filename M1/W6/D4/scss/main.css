@@ -1,0 +1,137 @@
+.container {
+  background: yellow;
+}
+@media screen and (max-width: 680px) {
+  .container {
+    background: lightblue;
+  }
+}
+@media screen and (max-width: 481px) {
+  .container {
+    background: aquamarine;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 2em;
+  text-align: justify;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+span {
+  color: rgb(255, 47, 0);
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 0, 0.353), rgba(255, 166, 0, 0.353));
+}
+.container li {
+  list-style: none;
+}
+@media screen and (max-width: 680px) {
+  .container {
+    background: lightblue;
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 481px) {
+  .container {
+    background: aquamarine;
+    font-size: small;
+  }
+}
+
+header {
+  display: flex;
+  background: rgb(102, 0, 128);
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu li {
+  padding: 2px 30px;
+}
+.menu li:hover {
+  color: greenyellow;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+}
+
+.mainTxt {
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.sidebar {
+  text-transform: uppercase;
+  text-align: center;
+}
+.sidebar li {
+  font-size: 20px;
+}
+.sidebar li:hover {
+  border-bottom: 1px dotted black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 99vh;
+  display: flex;
+  background: black;
+  justify-content: center;
+  color: white;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.menuFooter li {
+  padding: 2px 30px;
+}
+.menuFooter li:hover {
+  color: rgb(227, 47, 255);
+}
+.menuFooter li a {
+  color: rgb(72, 255, 0);
+}
+
+#mainContatti {
+  background-color: rgb(142, 127, 255);
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=main.css.map */

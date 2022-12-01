@@ -1,0 +1,114 @@
+@import 'mixins';
+@import 'variables';
+body{
+    box-sizing: border-box;
+    margin: $main-margin;
+    font-size: $fz-font-size;
+    line-height: $line-height;
+    text-align: $al-text-align;
+    justify-content: center;
+    font-family: $fam-font-family;
+
+}
+h1{
+    font-size: $head1-font-size;
+}
+h2{
+    font-size: $fz-font-size;
+}
+span{
+    color: $span-color;
+}
+a{text-decoration: none;
+color:$a-color}
+.container{
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 0, 0.353),rgba(255, 166, 0, 0.353));
+    li{
+        list-style: $ls-list-style-type;
+    }
+     @include devices(tablet) {
+        background: lightblue;
+        font-size: medium;
+    }
+    @include devices(mobile) {
+        background: aquamarine;
+        font-size: small;
+    
+    }
+}
+header{
+    display: $ds-display;
+    background: $bg-background;
+    justify-content: center;
+    position:sticky;
+    top:0vh;
+    }
+.menu{
+    display: $ds-display;
+    justify-content: $ds-justify-content;
+   
+    li{ 
+        padding:2px 30px;
+        
+        &:hover{
+            color:greenyellow
+        }
+    }
+}
+.main{
+   
+    display: $ds-display;
+    justify-content: $ds-justify-content;
+    font-size: $fz-font-size;
+}
+.mainTxt{
+    box-sizing: border-box;
+    padding-left: 50px;}
+.sidebar{
+    text-transform: uppercase;
+    text-align: center;
+   
+    
+    li{
+        font-size: 20px;
+        &:hover{
+        border-bottom:1px dotted black;
+        
+  }}
+}
+form{
+   
+    display: $ds-display;
+    flex-direction: column;;
+}
+footer{
+    position:sticky;
+    top:99vh;
+    display: $ds-display;
+    background: black;
+    justify-content: center;
+    color:white;
+    }
+.menuFooter{
+    display: $ds-display;
+    justify-content: $ds-justify-content;
+   
+    li{ 
+        padding:2px 30px;
+        
+        &:hover{
+            color:rgb(227, 47, 255)
+        }
+        a{
+            color: rgb(72, 255, 0);
+           
+        }
+    }
+    }
+
+#mainContatti{
+   background-color: rgb(142, 127, 255);
+   display:$ds-display;
+   justify-content: space-evenly;
+}
