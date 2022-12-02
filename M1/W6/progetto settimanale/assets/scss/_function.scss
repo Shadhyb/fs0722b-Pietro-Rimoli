@@ -1,0 +1,12 @@
+@mixin prova {
+    @if $template == 768px {
+       
+           footer{
+            color:greenyellow;
+           }
+        
+    }
+}
+footer{
+    @include prova;
+}
