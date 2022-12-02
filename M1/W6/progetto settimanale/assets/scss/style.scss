@@ -1,0 +1,16 @@
+@import 'menu';
+@import 'footer';
+@import 'sizing';
+@import 'text';
+@import 'img';
+
+
+body {box-sizing: border-box;}
+.btn{
+    font-size: x-large;
+    background-color:#7427F4; 
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 1em;
+    overflow: hidden;
+}

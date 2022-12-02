@@ -1,0 +1,21 @@
+.header{
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-size: cover; 
+    background-position: center;
+    
+}
+.d-block{
+    width: 5%;
+    border-radius: 50%;
+}
+.card-img-top{
+        width:50%;
+        z-index: 1;
+    }
+main{
+    background-color: #F5F5F5;
+    .card{
+        background-color: #F5F5F5;
+    }
+}
+

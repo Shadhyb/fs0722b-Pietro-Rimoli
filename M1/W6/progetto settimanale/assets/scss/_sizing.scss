@@ -1,0 +1,67 @@
+body{
+    line-height: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+   
+
+h1{
+    font-weight: normal;;
+    padding: 20px;
+}
+.headerText{
+    text-align: justify;
+    padding-top: 20px;
+}
+.card-title{font-weight: bolder;}
+h3,h5{
+    font-size: xx-large;
+    font-weight: normal;
+    
+}
+p{
+    font-size: x-large;
+    font-weight: lighter;
+    padding: 20px;
+}
+main{
+    i{font-size: xx-large;
+}}
+}
+.card{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border:0;
+    padding:20px ;
+}
+.header{
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.aside{
+    display: flex;
+    justify-content: space-evenly;
+    .card{
+        display: inline-block;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+.carousel-inner{
+        display: block;
+        text-align: center;
+        line-height: 2em;
+        .carousel-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        span{
+            font-size: large;
+            padding-top: 10px;
+        }
+
+    }
