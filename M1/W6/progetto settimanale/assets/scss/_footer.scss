@@ -1,6 +1,11 @@
 footer{
-    background:linear-gradient( rgb(101, 101, 101),#7427F4);
-color:white;}
+    background:linear-gradient(#7427F4, #6923da);
+color:white;
+justify-content: center;
+span{
+    margin-top: 10px;
+}}
+
 .flex-column{color: white;
     a{
         color: white;

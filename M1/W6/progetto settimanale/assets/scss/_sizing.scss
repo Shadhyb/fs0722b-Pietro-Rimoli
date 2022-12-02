@@ -12,11 +12,17 @@ h1{
     text-align: justify;
     padding-top: 20px;
 }
+h2{
+    padding-top: 20px;
+}
 .card-title{font-weight: bolder;}
-h3,h5{
+h3{
     font-size: xx-large;
     font-weight: normal;
     
+}
+h6{
+    font-size: large;
 }
 p{
     font-size: x-large;
@@ -65,3 +71,8 @@ main{
         }
 
     }
+
+  span{
+    font-size: larger;
+    
+  }
