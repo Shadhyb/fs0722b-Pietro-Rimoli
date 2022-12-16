@@ -3,7 +3,7 @@ fetch ('users.json').then(function (response){
 
 }).then(function(json){
 classe = json; 
-console.log(classe)
+console.log(classe[0].lastName)
 
 document.querySelector('#imgUser1').innerHTML = `<img class="bg-secondary bg-opacity-75 border rounded-circle" src =${'img/male.png'}></img>`
 document.querySelector('#user1').innerHTML = classe[0].firstName + " " + classe[0].lastName + " " ;
