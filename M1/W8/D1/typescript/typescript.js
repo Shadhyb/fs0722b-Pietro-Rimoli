@@ -10,7 +10,6 @@ var div = document.createElement('div').innerHTML = "the winner is ".concat(rand
 bottone.append(div);
 if (random <= user1) {
     console.log("il vincitore è user1");
-    document.body.appendChild(div);
 }
 else if (random <= user2) {
     console.log("il vincitore è user2");
