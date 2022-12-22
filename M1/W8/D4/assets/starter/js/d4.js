@@ -36,7 +36,7 @@ fetch('https://mocki.io/v1/765b2daf-41d5-4e94-a0d5-abd918f57b8f').then(function 
     console.log(cardigan.collezione);
     console.log("il costo del capo scontato è: € " + cardigan.arrotonda());
     var titolo1 = document.getElementById('titolo1').innerHTML = cardigan.capo;
-    var prezzo = document.getElementById('prezzo1').innerHTML = 'il prezzo è €' + cardigan.arrotonda();
+    var prezzo1 = document.getElementById('prezzo1').innerHTML = 'il prezzo è €' + cardigan.arrotonda();
     var tshirt = new Abbigliamento(capi[1].id, capi[1].codprod, capi[1].codprod, capi[1].capo, capi[1].modello, capi[1].quantita, capi[1].colore, capi[1].prezzoivainclusa, capi[1].prezzoivaesclusa, capi[1].disponibile, capi[1].saldo);
     console.log(tshirt.getsaldocapo());
     console.log(tshirt.getacquistocapo());
@@ -53,6 +53,7 @@ fetch('https://mocki.io/v1/765b2daf-41d5-4e94-a0d5-abd918f57b8f').then(function 
     console.log(maglione.getsaldocapo());
     console.log(maglione.getacquistocapo());
     console.log("il costo del capo scontato è: € " + maglione.arrotonda());
+    console.log(maglione.capo);
     var titolo4 = document.getElementById('titolo4').innerHTML = maglione.capo;
     var prezzo4 = document.getElementById('prezzo4').innerHTML = 'il prezzo è €' + maglione.arrotonda();
     var maglia = new Abbigliamento(capi[0].id, capi[0].codprod, capi[0].codprod, capi[0].capo, capi[0].modello, capi[0].quantita, capi[0].colore, capi[0].prezzoivainclusa, capi[0].prezzoivaesclusa, capi[0].disponibile, capi[0].saldo);
