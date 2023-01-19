@@ -47,6 +47,7 @@ export class ReactiveComponent implements OnInit {
 
 
   getPoteriF(){
+
     return (this.form.get('poteri') as FormArray).controls;
   }
 
