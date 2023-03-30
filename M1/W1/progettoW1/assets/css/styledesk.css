@@ -122,6 +122,8 @@ body {
   .main{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    text-align:initial;
   }
   .container{
     text-align: justify;
@@ -130,12 +132,18 @@ body {
   
   .mainarticles {
     margin: 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
   }
   .mainarticles h3{
       font-size: larger;
   }
   .mainarticles p{
-    margin-left: -5%;}
+    margin-left: -5%;
+  padding-left: 1.7em;}
+
   
   #circle {
     border-radius: 50%;
@@ -179,14 +187,18 @@ body {
 
   }
  
+ 
   .correlati {
-    box-sizing: content-box;
+    box-sizing: border-box;
     border: 1px solid #dee1e3;
+    max-width: 460px;
     border-radius: 1%;
     margin: 1%;
   }
   .correlati img {
     width: 100%;
+    min-height: 300px;
+    max-height: 300px;
   }
   
   #contatti{
